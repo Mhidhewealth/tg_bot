@@ -137,7 +137,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     update_user(user.id, user_data)
 
     keyboard = [
-        [InlineKeyboardButton("🐦 Follow Twitter", url=f"https://twitter.com/{TWITTER_HANDLE}")],
+        [InlineKeyboardButton("🐦 Follow Sponsor Twitter", url=f"https://twitter.com/{TWITTER_HANDLE}")],
         [InlineKeyboardButton("💬 Join Whatsapp Group", url="https://chat.whatsapp.com/KyBPEZKLjAZ8JMgFt9KMft")],
         [InlineKeyboardButton("📢 Join Whatsapp Channel", url="https://whatsapp.com/channel/0029VbAXEgUFy72Ich07Z53o")],
         [InlineKeyboardButton("✅ Join Telegram Channel", url=f"https://t.me/{CHANNEL_USERNAME.lstrip('@')}")],
@@ -263,14 +263,14 @@ async def tasks(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     bot_link = "https://t.me/UtilizersBot"
     task_link1 = f"https://twitter.com/{TWITTER_HANDLE}"
-    post_text = f"I just joined the Utilizers, and you should too! \n\nGet picked as one of the 1,000 verified testers of THE UTILIZERS beta platform and earn $50 every 2 weeks for FREE. \n\nAct fast, spots are limited!\n\n{bot_link}"
+    post_text = f"I just joined the ProjectTesters, and you should too! \n\nGet started early and don't miss out. \n\nAct fast, and accumulate earnings!\n\n{bot_link}"
     encoded_text = urllib.parse.quote(post_text)
     task_link2 = f"https://twitter.com/intent/tweet?text={encoded_text}"
     task_link3 = f"https://wa.me/?text={encoded_text}"
 
     message = (
         f"📝 Available Tasks (Complete all to earn ₦50 daily):\n\n"
-        f"1. Follow <a href='{task_link1}'>Utilizer01 on Twitter</a>\n\n"
+        f"1. Follow <a href='{task_link1}'>Our Sponsor on Twitter</a>\n\n"
         f"2. <a href='{task_link2}'>Post on X (Twitter)</a>\n\n"
         f"3. <a href='{task_link3}'>Share to 5 WhatsApp groups and your status</a>\n\n"
         "After completing all tasks, upload screenshots as proof to claim your ₦50 reward."
