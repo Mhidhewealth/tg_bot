@@ -138,8 +138,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     keyboard = [
         [InlineKeyboardButton("🐦 Follow Sponsor Twitter", url=f"https://twitter.com/{TWITTER_HANDLE}")],
-        [InlineKeyboardButton("💬 Join Whatsapp Group", url="https://chat.whatsapp.com/KyBPEZKLjAZ8JMgFt9KMft")],
-        [InlineKeyboardButton("📢 Join Whatsapp Channel", url="https://whatsapp.com/channel/0029VbAXEgUFy72Ich07Z53o")],
+        [InlineKeyboardButton("💬 Join Whatsapp Group", url="https://chat.whatsapp.com/IeqbHYLhry2ACbNejLd8Hl")],
+        [InlineKeyboardButton("📢 Join Whatsapp Channel", url="https://whatsapp.com/channel/0029VbAPtRHBlHpYN4mWWh0y")],
         [InlineKeyboardButton("✅ Join Telegram Channel", url=f"https://t.me/{CHANNEL_USERNAME.lstrip('@')}")],
         [InlineKeyboardButton("🔍 Verify Tasks", callback_data="verify_tasks")]
     ]
@@ -261,7 +261,7 @@ async def tasks(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
         return
     
-    bot_link = "https://t.me/UtilizersBot"
+    bot_link = "http://t.me/ProjectTesters_bot"
     task_link1 = f"https://twitter.com/{TWITTER_HANDLE}"
     post_text = f"I just joined the ProjectTesters, and you should too! \n\nGet started early and don't miss out. \n\nAct fast, and accumulate earnings!\n\n{bot_link}"
     encoded_text = urllib.parse.quote(post_text)
