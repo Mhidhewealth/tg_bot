@@ -688,7 +688,7 @@ async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update and update.effective_user:
         await context.bot.send_message(
             chat_id=update.effective_user.id,
-            text="❌ An error occurred. Please try again.",
+            text="❌ An error occurred but don't fret/n/nUse the menu below to continue to engage and earn.",
             reply_markup=get_main_menu_keyboard()
         )
 
